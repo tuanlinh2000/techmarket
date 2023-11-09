@@ -1,0 +1,95 @@
+.box-list{
+    box-shadow:2px 2px 12px rgba(134, 134, 134, 0.219);
+    border-radius: 10px;
+}
+.box-title{
+    display: flex;
+    align-items: center;
+    background-color: rgba(245, 244, 244, 0.849);
+}
+.box-title p{
+    width: 30%;
+}
+.box-link{
+    width: 70%;
+}
+.box-link a{
+    color: rgba(0, 0, 0, 0.575);
+    float: right;
+    border: 1px solid rgba(0, 0, 0, 0.068);
+    margin-right: 10px;
+    border-radius: 50px;
+}
+.box-link a:hover{
+    background-color: rgba(209, 209, 209, 0.836);
+}
+/*************************************/
+.box-content{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.products{
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: grid;
+    grid-auto-rows: minmax(min-content,max-content);
+    grid-template-columns: repeat(5,minmax(0,1fr));
+    /* Center slide text vertically */
+
+    align-items: center;
+    
+}
+.product{
+    height: 380px;
+    width:100%;
+    position:relative;
+    background-color:#FFFFFF;
+    border: 1px solid rgba(216, 216, 216, 0.164);
+    display: block;
+
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+.product img {
+    padding: 40px;
+    width: 100%;
+    height: 235px;
+    margin: 0 auto;
+}
+
+.product:hover{
+    box-shadow:2px 2px 12px rgba(47,47,47,0.40);
+    border:1px solid rgba(187,187,187,0.40);
+}
+.product:hover img{
+
+    transform:scale(1.04);
+    transition:all ease 0.3s;
+}
+.old-price{
+    font-size: 15px;
+    margin-bottom: 0;
+    text-decoration: line-through;
+    color: gray;
+} 
+.new-price{
+    color: red;
+    font-weight: bold;
+}
+.note{
+    margin-bottom: 0;
+    color: gray;
+}
+.info{
+    padding: 10px;
+}
+.info a{
+    text-decoration: none;
+    color: black;
+}
+.info a:hover {
+    color: rgb(136, 136, 136);
+}

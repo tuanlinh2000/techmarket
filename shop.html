@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <LINK REL="SHORTCUT ICON" style="width:20px"  HREF="Logo/logo-mini.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"/>
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="CSS/header.css"/>
+    <link rel="stylesheet" href="CSS/menu.css"/>
+    <link rel="stylesheet" href="CSS/footer.css"/>
+    <link rel="stylesheet" href="CSS/boxads.css"/>
+    <link rel="stylesheet" href="CSS/CSSshop/col-left.css"/>
+    
+    <link rel="stylesheet" href="CSS/CSSshop/col-right.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script type="text/javascript" src="JS/script.min.js"></script>
+    <!-----------changeIMG------------->
+    <script>
+        /*function changeImg(obj){
+            var path = obj.src
+            var img = document.getElementById("mainImg")
+            img.setAttribute("src", path)
+        }*/
+        function init() { 
+            var images = document.querySelectorAll("div.thumb img")
+            for (var i=0; i< images.length; i++)
+                images[i].onclick = function() {
+                    var path = this.src
+                    var img = document.getElementById("mainImg")
+                    img.setAttribute("src", path)
+                }
+         }
+    </script>
+</head>
+<body onload="init()" style="background-color: rgb(253, 253, 253);">
+    <header>
+        <div class="wrap">
+            <div class="logo">
+                <a href="#"><img width="150" height="60" src="Logo/logo-removebg-preview.png"/></a>
+            </div>
+            <div class="search">
+                <form>
+                    <input class="txt" placeholder="Nhập điện thoại, máy tính, phụ kiện...cần tìm" maxlength="50"/>
+                    <button type="submit" class="search-btn" title="Tìm Kiếm">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </form>
+            </div>
+            <ul class="shop">
+                <li>
+                    <a href="#">
+                        <i class="bi bi-bag-plus-fill"></i>
+                        Giỏ hàng
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--------------------MENU--------------------------->
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="bi bi-phone"></i>
+                        ĐIỆN THOẠI
+                    </a>
+                    <div class="submn">
+                        <div class="mncol1">
+                            <p class="mntitle">THƯƠNG HIỆU</p>
+                            <ul class="subdt">
+                                <li><a href="#">Apple</a></li>
+                                <li><a href="#">Samsung</a></li>
+                                <li><a href="#">Oppo</a></li>
+                                <li><a href="#">Xiaomi</a></li>
+                                <li><a href="#">Nokia</a></li>
+                                <li><a href="#">Vivo</a></li>
+                                <li><a href="#">Realme</a></li>
+                                <li><a href="#">Vsmart</a></li>
+                            </ul>
+                        </div>
+                        <div class="mncol2">
+                            <p class="mntitle">MỨC GIÁ</p>
+                            <ul class="subdt">
+                                <li><a href="#">Dưới 2 triệu</a></li>
+                                <li><a href="#">2-4 triệu</a></li>
+                                <li><a href="#">4-10 triệu</a></li>
+                                <li><a href="#">10-20 triệu</a></li>
+                                <li><a href="#">20-30 triệu</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bi bi-laptop"></i>
+                        LAPTOP
+                    </a>
+                    <div class="submn">
+                        <div class="mncol1">
+                            <p class="mntitle">THƯƠNG HIỆU</p>
+                            <ul class="subdt">
+                                <li><a href="#">Apple</a></li>
+                                <li><a href="#">DELL</a></li>
+                                <li><a href="#">Asus</a></li>
+                                <li><a href="#">HP</a></li>
+                                <li><a href="#">Lenovo</a></li>
+                                <li><a href="#">MSI</a></li>
+                                
+                            </ul>
+                        </div>
+                        <div class="mncol2">
+                            <p class="mntitle">MỨC GIÁ</p>
+                            <ul class="subdt">
+                                <li><a href="#">Dưới 4 triệu</a></li>
+                                <li><a href="#">4-10 triệu</a></li>
+                                <li><a href="#">10-15 triệu</a></li>
+                                <li><a href="#">15-20 triệu</a></li>
+                                <li><a href="#">20 triệu trở lên</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bi bi-watch"></i>
+                        ĐỒNG HỒ
+                    </a>
+                    <div class="submn">
+                        <div class="mncol1">
+                            <p class="mntitle">THƯƠNG HIỆU</p>
+                            <ul class="subdt">
+                                <li><a href="#">Rolex</a></li>
+                                <li><a href="#">Casio</a></li>
+                                <li><a href="#">Calvin Klein</a></li>
+                                <li><a href="#">Citizen</a></li>
+                                <li><a href="#">Apple</a></li>
+                            </ul>
+                        </div>
+                        <div class="mncol2">
+                            <p class="mntitle">MỨC GIÁ</p>
+                            <ul class="subdt">
+                                <li><a href="#">Dưới 1 triệu</a></li>
+                                <li><a href="#">1-2 triệu</a></li>
+                                <li><a href="#">2 triệu trở lên</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bi bi-headphones"></i>
+                        PHỤ KIỆN
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bi bi-tablet-landscape"></i>
+                        TABLET
+                    </a>
+                    <div class="submn">
+                        <div class="mncol1">
+                            <p class="mntitle">THƯƠNG HIỆU</p>
+                            <ul class="subdt">
+                                <li><a href="#">Apple</a></li>
+                                <li><a href="#">Samsung</a></li>
+                            </ul>
+                        </div>
+                        <div class="mncol2">
+                            <p class="mntitle">MỨC GIÁ</p>
+                            <ul class="subdt">
+                                <li><a href="#">1-2 triệu</a></li>
+                                <li><a href="#">2 triệu trở lên</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bi bi-sim"></i>
+                        SIM & THẺ
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!---------------------------------------------------->
+    <!-- Swiper -->
+    <div class="container"> 
+        <div class="top-name">
+            <h1 class="pro-name">iPhone 12 mini chính hãng</h1>
+        </div>
+        <div class="left">
+            <div class="col-left">
+                
+                <div class="item">
+                    <div class="mainImg">
+                        <img id="mainImg" src="products/phone/iphone/iphone12mini/iphone-12-mini-blue-select-2020_2_5.png" />
+                    </div>
+                    <div class="thumb">
+                        <div>
+                            <div class="item-border">
+                                <img src="products/phone/iphone/iphone12mini/iphone-12-mini-blue-select-2020_2_5.png"  alt="1"/>
+                            </div>
+                            <p>Xanh dương</p>
+                        </div>
+                        <div>
+                            <div class="item-border">
+                                <img src="products/phone/iphone/iphone12mini/iphone-12-mini-green-select-2020_8.png"   alt="2"/>
+                            </div>
+                            <p>Xanh lá</p>
+                        </div>
+                        <div>
+                            <div class="item-border">
+                                <img src="products/phone/iphone/iphone12mini/iphone-12-mini-red-select-2020_3.png"  alt="3"/>
+                            </div>
+                            <p>Đỏ</p>
+                        </div>
+                        <div>
+                            <div class="item-border">
+                                <img src="products/phone/iphone/iphone12mini/iphone-12-mini-white-select-2020_11.png"  alt="4"/>
+                            </div>
+                            <p>Trắng</p>
+                        </div>
+                        <div>
+                            <div class="item-border">
+                                <img src="products/phone/iphone/iphone12mini/iphone-12-tim_1.png"  alt="5"/>
+                            </div>
+                            <p>Tím</p>
+                        </div>
+                        <div>
+                            <div class="item-border">
+                                <img src="products/phone/iphone/iphone12mini/iphone-12-mini-black-select-2020_3.png"  alt="6"/>
+                            </div>
+                            <p>Đen</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-right">
+                <div class="box-price">
+                    <div class="price">
+                        <p class="new-price">19.000.000&nbsp;₫</p>
+                        <p class="old-price">Giá niêm yết: 
+                            <span>22.990.000&nbsp;₫</span>    
+                        </p>
+                    </div>
+                    <div class="linked">
+                        <a class="items" href="#">
+                            <span>256GB</span>
+                            <strong>24.000.000&nbsp;₫</strong>
+                        </a>
+                        <a class="items" href="#">
+                            <span>128GB</span>
+                            <strong>20.700.000&nbsp;₫</strong>
+                        </a>
+                        <a class="items" href="#">
+                            <span>64GB</span>
+                            <strong>19.000.000&nbsp;₫</strong>
+                        </a>                        
+                    </div>
+                    <div class="pro-options">
+                        <p style="font-weight: bold;" class="label">Giá tương ứng với màu</p>
+                        <ul class="options">
+                            <li>
+                                <a>
+                                    <span>Xanh dương</span>
+                                    <strong>19.000.000&nbsp;₫</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a >
+                                    <span>Xanh lá</span>
+                                    <strong>19.000.000&nbsp;₫</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <span>Đỏ</span>
+                                    <strong>19.000.000&nbsp;₫</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <span>Trắng</span>
+                                    <strong>19.000.000&nbsp;₫</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <span>Tím</span>
+                                    <strong>19.000.000&nbsp;₫</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <span>Đen</span>
+                                    <strong>19.000.000&nbsp;₫</strong>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <a href="#" class="big-button">
+                    <strong style="font-size: 20px;">MUA NGAY</strong>
+                    <p>(Giao tận nơi hoặc lấy tại cửa hàng)</p>
+                </a>
+                <!---------------------------------------->
+                
+                <!------------------------------------->
+            </div>
+        </div>
+        <div class="blog">
+            <div class="col-left2">
+                <div class="wrap-blog">
+                    <div class="blog-content">
+                        <h2>
+                            <strong>Đánh giá iPhone 12 - "Siêu phẩm" khẳng định đẳng cấp</strong>
+                        </h2>
+                        <p>
+                            Trong khi sức hút đến từ bộ ba iPhone 11 vẫn chưa nguội đi, hãng Apple vừa qua đã cho ra mắt "siêu phẩm" mới nhất 2020 mang tên 
+                            <strong>iPhone 12</strong>
+                            . Với những nâng cấp đáng kể cho màn hình và hiệu năng, đây sẽ là smartphone thuộc phân khúc cao cấp đáng chú ý trong năm nay.
+                        </p>
+                        <h3><strong>Màn hình Super Retina OLED rộng 6.1 inch</strong></h3>
+                        <p>
+                            Apple đã quyết định giữ nguyên thiết kế notch "tai thỏ" quen thuộc cho màn hình iPhone 12, 
+                            nhưng phần notch đã được tinh giản nhỏ gọn lại nhằm tạo thêm tỷ lệ hiển thị hình ảnh trên màn hình. 
+                            Về kích thước, màn hình của máy độ phân giải 2532x 1170pixels và có kích thước 6.1 inch, nhỏ hơn so với iPhone 12 Pro Max (6.7 inch).
+                        </p>
+                        <p>Đặc biệt, Apple đã thay thế công nghệ LCD bằng công nghệ Super Retina OLED. 
+                            Cùng với tính năng Dolby Vision và True-tone giúp điều chỉnh ánh sáng phù hợp theo môi trường xung quanh. 
+                            Màn hình này với độ sáng tối đa lên đến 1200 nits nhờ đó iPhone 12 sẽ hiển thị hình ảnh sắc nét, mượt mà & có màu rực rỡ hơn các đời iPhone trước. Đặc biệt với độ sáng màn hình cao cùng độ tương phản lớn lên đến 2.000.000:1, 
+                            người dùng có thể thoải mái sử dụng máy ở ngoài trời.</p>
+                        <p>
+                            <img src="https://cdn.cellphones.com.vn/media/wysiwyg/mobile/apple/iphone-12-12.jpg"/>
+                        </p>
+
+                        <span class="moreText">
+                        <p>Điểm cộng của iPhone 12 đó là viền màn hình siêu mỏng nhờ đó không gian hiển thị lớn với nhiều chi tiết hơn. Tuy nhiên, màn hình iPhone 12 vẫn chỉ duy trì ở tần số 60Hz.</p>
+                        <h3><strong>Thân máy nguyên khối cứng cáp & bền bỉ</strong></h3>
+                        <p>Toàn thân máy được chế tác từ chất liệu nguyên khối cứng cáp, với khung máy làm từ thép không gỉ và hai mặt trước & sau được phủ kính cường lực Gorilla Glass. 
+                            iPhone 12 cũng có khả năng chống nước và chống bụi theo tiêu chuẩn IP68 và hỗ trợ cả Apple Pay, đáp ứng nhu cầu sử dụng cần thiết của người dùng.</p>
+                        <p>
+                            <img src="https://cdn.cellphones.com.vn/media/wysiwyg/mobile/apple/iphone-12-14.jpg" alt="Thân máy nguyên khối cứng cáp & bền bỉ">
+                        </p>
+                        <p>iPhone 12 với ngoại hình quay lại với cạnh viền vuông vức trên thế hệ iPhone 4, 5. 
+                            Khung máy với thiết kế vát phẳng cùng phần gờ được hoàn thiện chi tiết giúp nâng cao cảm giác cầm nắm. Khung viền nhôm nhám này cũng hạn chế bám vân tay trong quá trình sử dụng.</p>
+                        <p>Mặt trước điện thoại được trang bị lớp kính cường lực Ceramic Shield, cứng hơn các loại kính cường lực trên điện thoại khác đang có trên thị trường mang lại độ bền cao lên đến 4 lần.</p>
+                        <p>Với kích thước mỏng gọn & chất liệu cứng cáp của thân máy, iPhone 12 sẽ vô cùng thích hợp với người dùng mong muốn sự giản đơn nhưng không kém phần sang trọng từ một chiếc iPhone. Đặc biệt khi iPhone 12 vẫn sở hữu màn hình 6,1 inch nhưng lại nhẹ hơn 16%, mỏng hơn 11% so với thế hệ trước đó.</p>
+                        <p><img src="https://cdn.cellphones.com.vn/media/wysiwyg/mobile/apple/iphone-12-10.jpg" alt="Nhiều màu sắc lựa chọn"></p>
+                        <p>Ngoài ra, như iPhone 11, iPhone 12 sẽ có nhiều phiên bản màu sắc khác nhau như đen, trắng, xanh dương, đỏ và xanh mint bắt mắt. 
+                            Với nhiều phiên bản màu, người dùng có thể thoải mái lựa chọn theo màu sắc yêu thích. Ngoài màu sắc, iPhone 12 cũng sẽ có rất nhiều phiên bản dung lượng bộ nhớ trong. 
+                            Trong đó bản tiêu chuẩn sẽ có dung lượng 64 GB, các bạn bộ nhớ mở rộng khác đó là iPhone 12 128GB, 256GB.</p>
+                        <h3><strong>Camera kép 12MP + 12MP ở mặt sau, hỗ trợ quay video 4K HDR </strong></h3>
+                        <p>iPhone 12 được trang bị cụm camera hai ống kính ở mặt sau, với hai ống kính có cùng độ phân giải 12MP. 
+                            Cụm camera này đều được nâng cấp so với thế hệ trước. Trong đó camera chính khẩu độ được nâng cấp lên đến f/1.6 cùng với 7 thấu kính nhờ đó hình ảnh thu được nhiều ánh sáng hơn lên đến 27%. </p>
+                        <p><img src="https://cdn.cellphones.com.vn/media/wysiwyg/mobile/apple/iphone-12-6.jpg" alt="hỗ trợ quay video 4K HDR "></p>
+                        <p>Cùng với đó là công nghệ Smart HDR 3 hỗ trợ ghép nhiều bức ảnh phơi sáng mang lại bức ảnh hoàn chỉnh, kể cả trong các điều kiện phức tạp như ngược sáng hoặc nắng gắt.</p>
+                        <p>Camera phụ với 5 thấu kính hỗ trợ chụp ảnh góc rộng với khẩu độ f/2.4 với góc chụp rộng lên đến 120 độ. Cảm biến này được đánh giá khá giống với iPhone 11 và 11 Pro.</p>
+                        <p><img src="https://cdn.cellphones.com.vn/media/wysiwyg/mobile/apple/iphone-12-3_2.jpg" alt="Camera kép 12+12MP ở mặt sau, camera selfie 12MP ở mặt trước"></p>
+                        <p>Cụm camera sau không chỉ có tính năng chống rung OIS, chụp góc siêu rộng và panorama, mà còn hỗ trợ quay video với định dạng lên đến 4K 60fps hoặc 1080p 240fps cùng âm thanh stereo sống động.</p>
+                        <p><img src="https://cdn.cellphones.com.vn/media/wysiwyg/mobile/apple/iphone-12-8.jpg" alt="hỗ trợ quay video 4K HDR "></p>
+                        <p>Đặc biệt khi chụp hình trong điều khiện thiếu sáng thì hình ảnh vẫn khá ổn, khá chi tiết và không bị bệt khi khả năng thu sáng được nâng cao đến 27%. 
+                            Ngoài ra, chế độ chụp đêm có thể sử dụng ở cả hai camera. Đây cũng là một cải tiến khi thế hệ trước không hỗ trợ chụp đêm trên cảm biến góc rộng.</p>
+                        <p>Không chỉ khả năng chụp ảnh, khả năng quay video trên iPhone 12 cũng được đánh giá cao với tính năng quay quay video time-lapse night mode và 4K HDR. Kết quả bạn sẽ có những thước phim chất lượng với độ sắc nét cao. 
+                            Nhờ cấu hình vượt trội, người dùng có thể chỉnh sửa, biên tập và xuất bản video ngay trên điện thoại một cách nhanh chóng nhất.</p>
+                        <h3><strong>Camera selfie 12MP ở mặt trước</strong></h3>
+                        <p>Ở phần notch mặt trước của điện thoại iPhone 12 còn có camera selfie độ phân giải 12MP. 
+                            Tương tự như iPhone 11, camera selfie của iPhone có thêm tính năng gyro-EIS và cảm biến đo chiều sâu sinh trắc học SL 3D hiện đại, 
+                            mang đến chất lượng hình ảnh rõ nét & hoàn mỹ.</p>
+                        <p><img src="https://cdn.cellphones.com.vn/media/wysiwyg/mobile/apple/iphone-12-9.jpg" alt="Camera selfie 12MP ở mặt trước"></p>
+                        <p>Đặc biệt với chế độ chụp đêm Night mode, người dùng có thể hoàn toàn tự tin selfie trong điều kiện thiếu sáng. Các tính năng đặc biệt tưởng chừng chỉ có ở camera sau như Smart HDR 3, quay video 4K HDR Dolby Vision giờ đây cũng được trang bị trên camera trước mang lại những trải nghiệm hình ảnh vượt trội.</p>
+                        <p><strong>Vi xử lý Apple A14 5nm với RAM 4GB và dung lượng 64GB</strong></p>
+                        <p>Mỗi thế hệ iPhone mới đều tương ứng với dòng CPU mới hơn nhằm mang lại hiệu năng mạnh mẽ nhất. Và <strong>iPhone 12</strong>
+                            năm nay được trang bị bộ vi xử lý Apple A14 Bionic chạy trên tiến trình 5nm kèm chip cấu hình GPU do Apple sản xuất.</p>
+                        <p>Bởi vì chip Apple A13 Bionic trước đó được đánh giá là mạnh nhất trong các thế hệ chip Apple, ta có thể mong chờ hiệu năng vượt trội đến từ Apple A14 Bionic trên iPhone.  </p>
+                        <p>Con chip Apple A14 Bionic còn có khả năng học hỏi thói quen người dùng với 16 lõi Neural Engine để tối ưu hóa tình trang pin.</p>
+                        <p><img src="https://cdn.cellphones.com.vn/media/wysiwyg/mobile/apple/iphone-12-5.jpg" alt="Vi xử lý Apple A14 5nm"></p>
+                        <p>Ngoài ra, iPhone 12 còn có mức RAM 4GB và dung lượng lưu trữ 64 GB. Hệ điều hành chính của máy sẽ là iOS 14 cùng với một số tính năng đặc biệt như chế độ hiển thị màn hình, ứng dụng thể dục, quét mã QR và những nâng cấp phần mềm đáng kể giúp tăng trải nghiệm sử dụng.</p>
+                        <p>Về khả năng chơi game, điện thoại iPhone 12 với độ ổn định với mức FPS 60. Khi chơi game với mức đồ họa cao nhất nhưng vẫn giữ mức FPS từ 59-61. 
+                            Với điểm số hiệu năng qua phần mềm Antutu, iPhone 12 cho điểm hiệu năng trung bình lên đến 592383 điểm. Trong đó điểm CPU chiếm 182.724; GPU là 248.724; Mem 67.676 và UX 93.293 điểm.</p>
+                        <p>Loa ngoài trên iPhone 12 cũng được cải tiến cho âm thanh chất lượng với biên độ âm thanh rộng cùng với trị trí đặt loa hợp lý. Cụ thể máy đặt 73 điểm trong bài đánh giá âm thanh của DxOMark.</p>
+                        <h3><strong>Sử dụng cả ngày, hỗ trợ sạc nhanh 20W</strong></h3>
+                        <p>Điện thoại iPhone 12 cũng được nâng cấp về dung lượng pin so với người tiền nhiệm iPhone 11. Cụ thể, máy sẽ mang đến cho người dùng hơn 17 giờ xem video, hơn và lên đến 65 giờ nghe nhạc liên tục.</p>
+                        <p>Một chiếc iPhone cao cấp phục vụ mọi công việc sẽ không thể thiếu tính năng sạc nhanh. 
+                            "Siêu phẩm" điện thoại iPhone cũng được trang bị tính năng sạc nhanh Power Delivery 2.0 sẽ đảm bảo thiết bị có ngay 50% thời lượng pin chỉ trong 30 phút. 
+                            iPhone 12 cũng có thêm tính năng sạc không dây Qi, cho phép chiếc máy tiếp nạp năng lượng trên đế sạc không dây hữu ích & tiện lợi.</p>
+                        <p><img src="https://cdn.cellphones.com.vn/media/wysiwyg/mobile/apple/iphone-12-4_2.jpg" alt="Sử dụng cả ngày với viên pin dung lượng 3210mAh kèm sạc nhanh"></p>
+                        <p>Điểm mới trên iPhone 12 đó chính là sạc MagSafe. Đây là công nghệ sạc không dây mới của Apple với đế nam châm giúp cố định vào mặt lưng điện thoại. Nhờ đó quá trình sạc được ổn định và an toàn. 
+                            Khi sử dụng sạc MagSafe, máy có thể sạc dưới công suất 15W.</p>
+                        <p>Điện thoại iPhone 12 còn được trang bị công nghệ chống nước và bụi bẩn IP68. Công nghệ hỗ trợ chống nước ở độ sâu 6m trong vòng 30 phút. 
+                            Nhờ đó, người dùng iPhone 12 có thể thoải mái sử dụng ở nhiều môi trường khác nhau, kể cả dưới trời mưa phùn hay mang đi bơi lội.</p>
+                        <p><img src="https://cdn.cellphones.com.vn/media/wysiwyg/mobile/apple/iphone-12-13.jpg" alt="công nghệ chống nước và bụi bẩn IP68"></p>
+                        <h3><strong>Hệ điều hành iOS 14, bảo mật Face ID an toàn</strong></h3>
+                        <p>Điện thoại iPhone 12 sẽ được chạy sẵn trên hệ điều hành iOS 14, phiên bản hệ điều hành mới nhất tại thời điểm máy ra mắt. 
+                            Với iOS 14, người dùng có thể thoải mái thay đổi, xắp sếp lại các tùy biến theo phong cách riêng cảu bản thân.</p>
+                        <p>Đặc biệt máy còn được hỗ trợ nâng cấp hệ điều hành trong nhiều năm nữa, người dùng hoàn toàn có thể an tâm khi sử dụng.</p>
+                        <p><img src="https://cdn.cellphones.com.vn/media/wysiwyg/mobile/apple/iPhone-11-12.jpg" alt="Hệ điều hành iOS 14, bảo mật Face ID an toàn"></p>
+                        <p>Ngoài ra, điện thoại iPhone 12 chính hãng VNA sẽ hỗ trợ 1 esim và 1 nano sim. Nhờ đó người dùng có thể sử dụng song song hai số điện thoại đầy tiện lợi.
+                            <br>iPhone 12 vẫn chưa có sự xuất hiện trở lại của Touch ID nhưng công nghệ nhận dạng khuôn mặt Face ID vẫn mang lại thời gian mở máy nhanh chóng cùng độ bảo mật cao.
+                        </p>
+                        <p>Về ngôn ngữ, iPhone có hỗ trợ ngôn ngữ hầu hết các quốc gia trên thế giới, trong đó có tiếng việt.</p>
+                        <h3><strong></strong></h3>
+                        <p>“Hey siri” là một tính năng được yêu thích trên iPhone. Người dùng có thể sử dụng gọng nói để hỗ trơ nhiều việc khi không rảnh tay như đặt lời nhắc, gửi tin nhắn chỉ thông qua giọng nói. Để kích hoạt chỉ cần gọi “Hey Siri”.</p>
+                        <p><img src="https://cdn.cellphones.com.vn/media/wysiwyg/mobile/apple/iphone-12-11.jpg" alt="Hey Siri – Trợ lý ảo tiện lợi"></p>
+                        <h2><strong>Điện thoại iPhone 12 giá bao nhiêu tiền?</strong></h2>
+                        <p>Giá bán iPhone 12 tại hệ thống bán lẻ di động CellphoneS cụ thể như sau:</p>
+                        <ul>
+                            <li><p>  •  Phiên bản 64GB: 19.800.000 VNĐ</p></li>
+                            <li><p>  •  Phiên bản 128GB: 22.000.000 VNĐ </p></li>
+                            <li><p>  •  Phiên bản 256GB: 24.500.000 VNĐ</p></li>
+                        </ul>
+                        <p>Trên đây là mức giá của hàng chính hãng VN/A, sản phẩm sẽ được bảo hành 12 tháng tại trung tâm bảo hành ủy quyền của Apple tại Việt Nam.</p>
+                        </span> 
+                    </div>
+                    <div class="rmb">
+                        <a class="read-more-btn">Xem Thêm</a>
+                    </div>
+                </div>
+                <div class="product-group">
+                    <div class="product-container">
+                        <h2 style="font-size: 20px;">Các sản phẩm tương tự</h2>
+                        <div class="products">
+                            <div class = "product" >
+                                <a href="#">
+                                    <img src = "https://cdn.cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/i/p/iphone_11_white_4_.png" >
+                                </a>
+                                <div class = "info">
+                                    <a href="#">iPhone 11 Chính hãng VN/A</a>
+                                    <div class="product-price">
+                                        <p class="old-price">18.000.000&nbsp;₫</p>
+                                        <p class="new-price">14.500.000&nbsp;₫</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class = "product" >
+                                <a href="#">
+                                    <img src = "https://cdn.cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/i/p/iphone_11_white_4_.png" >
+                                </a>
+                                <div class = "info">
+                                    <a href="#">iPhone 11 128GB Chính hãng VN/A</a>
+                                    <div class="product-price">
+                                        <p class="old-price">19.900.000&nbsp;₫ </p>
+                                        <p class="new-price">16.300.000&nbsp;₫</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class = "product" >
+                                <a href="#">
+                                    <img src = "https://cdn.cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/r/e/red-magic-6-1.jpg" >
+                                </a>
+                                <div class = "info">
+                                    <a href="#">Nubia Red Magic 6</a>
+                                    <div class="product-price">
+                                        <p class="old-price">17.990.000&nbsp;₫ </p>
+                                        <p class="new-price">15.990.000&nbsp;₫</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class = "product" >
+                                <a href="#">
+                                    <img src = "https://cdn.cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/i/p/iphone_12_mini_blue.png" >
+                                </a>
+                                <div class = "info">
+                                    <a href="#">iPhone 12 mini Chính hãng VN/A</a>
+                                    <div class="product-price">
+                                        <p class="old-price">18.990.000&nbsp;₫ </p>
+                                        <p class="new-price">15.900.000&nbsp;₫</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                            
+                            
+                    </div>
+                </div>
+                <div class="comment">
+                    <div class="wrap-cmt">
+                        <div class="cmt-title">
+                            <span>Hỏi và đáp</span>
+                        </div>
+                        <div class="input-cmt">
+                            <textarea class="form-control" placeholder="Xin mời nhập câu hỏi..."></textarea>
+                        </div>
+                        <div class="button-cmt">
+                            <a class="btn-cmt">Gửi</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-right2">
+                <div class="technical-info">
+                    <div class="head-info">
+                        <h2>Thông số kĩ thuật</h2>
+                    </div>
+                    <div class="info-content">
+                        <tbody>
+                            <table>
+                                <tr>
+                                    <td>Kích thước màn hình</td>
+                                    <td>6.1 inches</td>
+                                </tr>
+                                <tr>
+                                    <td>Công nghệ màn hình</td>
+                                    <td>OLED</td>
+                                </tr>
+                                <tr>
+                                    <td>Camera sau</td>
+                                    <td>12 MP, f/1.6, 26mm (wide), 1.4µm, dual pixel PDAF, OIS
+                                        <br> 12 MP, f/2.4, 120˚, 13mm (ultrawide), 1/3.6
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Camera trước</td>
+                                    <td>12 MP, f/2.2, 23mm (wide), 1/3.6
+                                        <br> SL 3D, (depth/biometrics sensor)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Chipset</td>
+                                    <td>Apple A14 Bionic (5 nm)</td>
+                                </tr>
+                                <tr>
+                                    <td>Dung lượng RAM</td>
+                                    <td>4 GB</td>
+                                </tr>
+                                <tr>
+                                    <td>Bộ nhớ trong</td>
+                                    <td>64 GB</td>
+                                </tr>
+                                <tr>
+                                    <td>Pin</td>
+                                    <td>Li-Ion, sạc nhanh 20W, sạc không dây 15W, USB Power Delivery 2.0</td>
+                                </tr>
+                                <tr>
+                                    <td>Thẻ SIM</td>
+                                    <td>2 SIM (nano‑SIM và eSIM)</td>
+                                </tr>
+                                <tr>
+                                    <td>Hệ điều hành</td>
+                                    <td>iOS 14.1 hoặc cao hơn (Tùy vào phiên bản phát hành)</td>
+                                </tr>
+                                <tr>
+                                    <td>Độ phân giải màn hình</td>
+                                    <td>1170 x 2532 pixels</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Tính năng màn hình</td>
+                                    <td>HDR10<br> Vision<br>True-tone</td>
+                                </tr>                            
+                                <tr>
+                                    <td>Loại CPU</td>
+                                    <td>Hexa-core</td>
+                                </tr>                            
+                                <tr>
+                                    <td>GPU</td>
+                                    <td>Apple GPU (4-core graphics)</td>
+                                </tr>
+                                <tr>
+                                    <td>Quay video</td>
+                                    <td>Trước: 4K@24/30/60fps, 1080p@30/60/120fps, gyro-EIS
+                                        <br>Sau: 4K@24/30/60fps, 1080p@30/60/120/240fps, HDR, Dolby Vision HDR (up to 30fps), stereo sound rec.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Quay video trước</td>
+                                    <td>4K@24/30/60fps, 1080p@30/60/120fps, gyro-EIS</td>
+                                </tr>
+                                <tr>
+                                    <td>Tính năng camera</td>
+                                    <td>Ban đêm (Night Mode) 
+                                        <br> Trôi nhanh thời gian (Time Lapse) <br> Quay chậm (Slow Motion) 
+                                        <br> Xóa phông <br> Toàn cảnh (Panorama) 
+                                        <br> Tự động lấy nét (AF) <br> Nhận diện khuôn mặt <br>
+                                        HDR <br> Zoom kỹ thuật số <br> Góc rộng (Wide) <br> Góc siêu rộng (Ul
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Kích thước</td>
+                                    <td>146.7 x 71.5 x 7.4 mm</td>
+                                </tr>
+                                <tr>
+                                    <td>Trọng lượng</td>
+                                    <td>164g</td>
+                                </tr>
+                                <tr>
+                                    <td>Chất liệu mặt lưng</td>
+                                    <td>Kính</td>
+                                </tr>
+                                <tr>
+                                    <td>Chất liệu khung viền</td>
+                                    <td>Kim loại</td>
+                                </tr>
+                                <tr>
+                                    <td>Công nghệ sạc</td>
+                                    <td>Sạc nhanh 20W
+                                        <br>Power Delivery 2.0
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Cổng sạc</td>
+                                    <td>Lighting</td>
+                                </tr>
+                                <tr>
+                                    <td>Hồng ngoại</td>
+                                    <td>Không</td>
+                                </tr>
+                                <tr>
+                                    <td>Jack tai nghe 3.5</td>
+                                    <td>Không</td>
+                                </tr>
+                                <tr>
+                                    <td>Cảm biến vân tay</td>
+                                    <td>Không</td>
+                                </tr>
+                                <tr>
+                                    <td>Các loại cảm biến</td>
+                                    <td>Cảm biến ánh sáng, Cảm biến áp kế, Cảm biến gia tốc, Cảm biến tiệm cận, Con quay hồi chuyển, La bàn</td>
+                                </tr>                            
+                                <tr>
+                                    <td>Công nghệ NFC</td>
+                                    <td>Có</td>
+                                </tr>
+                                <tr>
+                                    <td>Khe cắm thẻ nhớ</td>
+                                    <td>Không</td>
+                                </tr>
+                                <tr>
+                                    <td>Wi-Fi</td>
+                                    <td>Wi-Fi 802.11 a/b/g/n/ac/6, dual-band, hotspot</td>
+                                </tr>                            
+                                <tr>
+                                    <td>Bluetooth</td>
+                                    <td>5.0, A2DP, LE</td>
+                                </tr>                            
+                                <tr>
+                                    <td>GPS</td>
+                                    <td>A-GPS, GLONASS, GALILEO, QZSS</td>
+                                </tr>
+                                <tr>
+                                    <td>Kiểu màn hình</td>
+                                    <td>tai thỏ</td>
+                                </tr>
+                                <tr>
+                                    <td>Tính năng đặc biệt</td>
+                                    <td>Sạc không dây</td>
+                                </tr>
+                                
+                                
+                            </table>
+                            
+                        </tbody>
+                    </div>
+                </div>
+                <!---------------------------------------------->
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <!----------------------------------------------------
+    <footer>
+        <div class="contact-box">
+            <div class="container">
+                <div class="footer-col">
+                    <ul class="list-cont">
+                        <li>
+                            <p class="list-foot"><a href="#" >Lịch sử mua hàng</a></p>
+                            <p class="list-foot"><a href="#" >Cộng tác bán hàng</a></p>
+                            <p class="list-foot"><a href="#" >Tìm hiểu mua trả góp</a></p>
+                            <p class="list-foot"><a href="#" >Chính sách bảo hành</a></p>
+                        </li>
+                    </ul>
+                    <ul class="list-cont">
+                        <li>
+                            <p class="list-foot"><a href="#" >Giới thiệu công ty</a></p>
+                            <p class="list-foot"><a href="#" >Tuyển dụng</a></p>
+                            <p class="list-foot"><a href="#" >Tìm cửa hàng</a></p>
+                            <p class="list-foot"><a href="#" >Gửi góp ý, khiếu nại</a></p>
+                        </li>
+                    </ul>
+                    <ul class="list-cont">
+                        <li>
+                            <p class="list-foot">Liên hệ:</p>
+                            <p class="tel"> 079.7523.180</p>
+                        </li>
+                    </ul>
+                    <ul class="list-cont">
+                        <li>
+                            <p class="payment-title"><strong>Thanh toán miễn phí</strong> </p>
+                            <li class="payment-logo">
+                                <img src="payment/logo-visa.png"/>
+                                <img src="payment/logo-master.png"/>
+                                <img src="payment/logo-samsungpay.png"/>
+                            </li>
+                            <li class="payment-logo">
+                                <img src="payment/logo-vnpay.png"/>
+                                <img src="payment/logo-atm.png"/>
+                                <img src="payment/logo-jcb.png"/>
+                            </li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <------------------------------->
+    <!-- Swiper JS --
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper --
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <!-------------------------------------------------->
+    <script>
+        const readMoreBtn = document.querySelector('.read-more-btn');
+        const content = document.querySelector('.blog-content');
+
+        readMoreBtn.addEventListener('click',(e)=>{
+            content.classList.toggle('show-more');
+            if(readMoreBtn.innerText === 'Xem Thêm'){
+                readMoreBtn.innerText = 'Thu gọn';
+            }else{
+                readMoreBtn.innerText = 'Xem Thêm';
+            }
+        })
+    </script>
+</body>
+</html>

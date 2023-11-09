@@ -1,0 +1,46 @@
+.contact-box{
+    
+    font-size: 15px;
+    
+}
+.list-cont {
+    width: 25%;
+    list-style-type: none;
+    padding: 15px;
+    float: left;
+}
+.list-foot{
+    line-height: 20px;
+}
+.list-foot a{
+    text-decoration: none;
+    color: rgb(99, 97, 97);
+}
+.list-foot a:hover{
+    color: rgba(128, 128, 128, 0.849);
+}
+.footer-col{
+    background-color: rgb(255, 255, 255);
+    height: 181px;
+    border-radius: 10px;
+    border: 1px solid rgb(224, 224, 224);
+}
+.payment-title{
+    font-size: 18px;
+}
+.payment-logo{
+    margin-bottom: 10px;
+}
+.payment-logo img{
+    width: 80px;
+}
+.tel{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    /*border: 5px solid rgb(207, 207, 207);*/
+    background-color: coral;
+    border-radius: 10px;
+    width: 130px;
+    text-align: center;
+}

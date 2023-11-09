@@ -1,0 +1,138 @@
+.col-right{
+    width: 50%;
+    float: right;
+}
+.left{
+    display: flex;
+    
+}
+.box-price{
+    width: 100%;
+    padding-left: 20px;
+}
+.price{
+    display: flex;
+    align-items: center;
+}
+.new-price{
+    color: red;
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.old-price{
+    float: right;
+    color: rgb(92, 92, 92);
+    font-size: 15px;
+}
+.old-price span{
+    text-decoration: line-through;
+}
+/**************************************************************/
+.linked{
+    display: flex;
+}
+    
+.items {
+    width: calc(100%/3);
+    border: 1px solid rgb(189, 189, 189);
+    border-radius: 3px;
+    box-shadow: 0 2px 3px 0 rgb(0 0 0 / 15%);
+    padding: 5px;
+    text-align: center;
+    margin-right: 10px;
+    color: black;
+}
+.items:hover{
+    text-decoration: none;
+    border-color: red;
+}
+.items strong{
+    display: block;
+    color: red !important;
+}
+/******************************************************/
+.pro-options{
+    margin-top: 20px;
+}
+
+.options{
+    display: block;
+}
+.options li{
+    border: 1px solid rgb(189, 189, 189);
+    border-radius: 3px;
+    box-shadow: 0 2px 3px 0 rgb(0 0 0 / 15%);
+    width: 170px;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    display: inline-block;
+}
+.options li a{
+    color: black;
+}
+
+.options li a:hover
+{
+    text-decoration: none;
+}
+.pro-options li{
+    list-style: none;
+}
+.pro-options li a strong{
+    display: block;
+    color: red;
+}
+/*****************************************************/
+.big-button{
+    text-align: center;    
+    display: block;
+    width: 90%;
+    border: 1px solid coral;
+    border-radius: 20px;
+    padding-top: 5px;
+    margin: 0 auto;
+    background-color: coral;
+    color: white;
+    margin-bottom: 50px;
+}
+.big-button:hover{
+    text-decoration: none;
+    background-color: white;
+    color: coral;
+}
+/**************************************************************/
+.col-right2{
+    width: 30%;
+    float: right;
+}
+.technical-info{
+    
+    background-color: white;
+}
+.info-content{
+    
+    font-size: 15px;
+    border: 1px solid rgb(221, 221, 221);
+    padding: 10px;
+}
+.head-info{
+    background-color: whitesmoke;
+    text-align: center;
+    border: 1px solid rgb(221, 221, 221);
+    padding: 5px;
+    border-bottom: none;
+}
+.head-info h2{
+    margin-bottom: 0;
+    font-size: 20px;
+}
+.info-content tr{
+    border-bottom: 1px solid rgba(221, 221, 221, 0.493);
+    font-size: 13px;
+}
+.info-content tr td:first-child{
+    font-weight: bold;
+    margin-right: 3px;
+}

@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <LINK REL="SHORTCUT ICON" style="width:20px"  HREF="Logo/logo-mini.png">
+        <title>Tech Market</title>
+        <link rel="stylesheet" href="CSS/header.css"/>
+        <link rel="stylesheet" href="CSS/menu.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="CSS/boxads.css"/>
+        <link rel="stylesheet" href="CSS/swiper.css"/>
+        <link rel="stylesheet" href="CSS/box-list.css"/>
+        <link rel="stylesheet" href="CSS/footer.css"/>
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+        <script type="text/javascript" src="JS/script.min.js"></script>
+    </head>
+    
+    <body style="background-color: rgb(250, 250, 250);">
+        <!-- Optional JavaScript Swiper Slide-->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        
+        <script>
+            $(document).ready(function() {
+                
+
+                $(window).scroll(function() {
+                    if ($(this).scrollTop() >=60){
+                        $("nav").css({
+                            "position": "fixed",
+                            "left": 0,
+                            "right": 0,
+                            "top":0,
+                            "height": 35,
+                            "z-index":999
+                        })
+                    } else{
+                        $("nav").css({
+                            "position": "relative"
+                        })
+                    }
+                })
+                
+
+            })
+        </script>
+         
+        <header>
+            <div class="wrap">
+                <div class="logo">
+                    <a href="#"><img width="150" height="60" src="Logo/logo-removebg-preview.png"/></a>
+                </div>
+                <div class="search">
+                    <form>
+                        <input class="txt" placeholder="Nhập điện thoại, máy tính, phụ kiện...cần tìm" maxlength="50"/>
+                        <button type="submit" class="search-btn" title="Tìm Kiếm">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </form>
+                </div>
+                <ul class="shop">
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-bag-plus-fill"></i>
+                            Giỏ hàng
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-phone"></i>
+                            ĐIỆN THOẠI
+                        </a>
+                        <div class="submn">
+                            <div class="mncol1">
+                                <p class="mntitle">THƯƠNG HIỆU</p>
+                                <ul class="subdt">
+                                    <li><a href="#">Apple</a></li>
+                                    <li><a href="#">Samsung</a></li>
+                                    <li><a href="#">Oppo</a></li>
+                                    <li><a href="#">Xiaomi</a></li>
+                                    <li><a href="#">Nokia</a></li>
+                                    <li><a href="#">Vivo</a></li>
+                                    <li><a href="#">Realme</a></li>
+                                    <li><a href="#">Vsmart</a></li>
+                                </ul>
+                            </div>
+                            <div class="mncol2">
+                                <p class="mntitle">MỨC GIÁ</p>
+                                <ul class="subdt">
+                                    <li><a href="#">Dưới 2 triệu</a></li>
+                                    <li><a href="#">2-4 triệu</a></li>
+                                    <li><a href="#">4-10 triệu</a></li>
+                                    <li><a href="#">10-20 triệu</a></li>
+                                    <li><a href="#">20-30 triệu</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-laptop"></i>
+                            LAPTOP
+                        </a>
+                        <div class="submn">
+                            <div class="mncol1">
+                                <p class="mntitle">THƯƠNG HIỆU</p>
+                                <ul class="subdt">
+                                    <li><a href="#">Apple</a></li>
+                                    <li><a href="#">DELL</a></li>
+                                    <li><a href="#">Asus</a></li>
+                                    <li><a href="#">HP</a></li>
+                                    <li><a href="#">Lenovo</a></li>
+                                    <li><a href="#">MSI</a></li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="mncol2">
+                                <p class="mntitle">MỨC GIÁ</p>
+                                <ul class="subdt">
+                                    <li><a href="#">Dưới 4 triệu</a></li>
+                                    <li><a href="#">4-10 triệu</a></li>
+                                    <li><a href="#">10-15 triệu</a></li>
+                                    <li><a href="#">15-20 triệu</a></li>
+                                    <li><a href="#">20 triệu trở lên</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-watch"></i>
+                            ĐỒNG HỒ
+                        </a>
+                        <div class="submn">
+                            <div class="mncol1">
+                                <p class="mntitle">THƯƠNG HIỆU</p>
+                                <ul class="subdt">
+                                    <li><a href="#">Rolex</a></li>
+                                    <li><a href="#">Casio</a></li>
+                                    <li><a href="#">Calvin Klein</a></li>
+                                    <li><a href="#">Citizen</a></li>
+                                    <li><a href="#">Apple</a></li>
+                                </ul>
+                            </div>
+                            <div class="mncol2">
+                                <p class="mntitle">MỨC GIÁ</p>
+                                <ul class="subdt">
+                                    <li><a href="#">Dưới 1 triệu</a></li>
+                                    <li><a href="#">1-2 triệu</a></li>
+                                    <li><a href="#">2 triệu trở lên</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-headphones"></i>
+                            PHỤ KIỆN
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-tablet-landscape"></i>
+                            TABLET
+                        </a>
+                        <div class="submn">
+                            <div class="mncol1">
+                                <p class="mntitle">THƯƠNG HIỆU</p>
+                                <ul class="subdt">
+                                    <li><a href="#">Apple</a></li>
+                                    <li><a href="#">Samsung</a></li>
+                                </ul>
+                            </div>
+                            <div class="mncol2">
+                                <p class="mntitle">MỨC GIÁ</p>
+                                <ul class="subdt">
+                                    <li><a href="#">1-2 triệu</a></li>
+                                    <li><a href="#">2 triệu trở lên</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-sim"></i>
+                            SIM & THẺ
+                        </a>
+                    </li>
+               
+                   
+                </ul>
+            </nav>
+
+        </header>
+        
+        <div class="container">
+            
+            <div class="box-container">
+                <div class="box-left">
+                    <div id="carouselExampleIndicators" class="carousel slide" style="width:100% ;padding: 2px;" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="#">
+                                <img class="d-block w-100" src="Banner img/pic1.png" alt="First slide">
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="#">
+                                <img class="d-block w-100" src="Banner img/pic2.png" alt="Second slide">
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="#">
+                                <img class="d-block w-100" src="Banner img/pic3.png" alt="Third slide">
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="#">
+                                <img class="d-block w-100" src="Banner img/pic4.png" alt="Forth slide">
+                            </a>
+                        </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="box-right-ads">
+                    <div class="box-right-ad">
+                        <a href="#">
+                            <img src="Ads/pic1.png">
+                        </a>
+                    </div>
+                    <div class="box-right-ad">
+                        <a href="#">
+                            <img src="Ads/pic2.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!------------------------------------------->
+            <div class="box-slide-product">
+                <p style="font-size: 25px; color: rgb(255, 255, 255); font-weight: bold; 
+                margin: 0;padding: 10px;">HOT SALE</p>
+                <!----------------------------------------------------------------->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <!--slide 1-------------------------------------->
+                        <div class = "swiper-slide" >
+                            <div class = "slider-box" >
+                                <a href="#">
+                                <div class = "img-box">
+                                    <img src = "products/phone/iphone-12-pro-max-xanh-duong-new-600x600-600x600.jpg" >
+                                </div></a>
+                                <div class = "info">
+                                    <a href="#">iPhone 12 Pro Max</a>
+                                    <div class="product-price">
+                                        <p class="old-price">22.990.000&nbsp;₫ -10%</p>
+                                        <p class="new-price">20.490.000&nbsp;₫</p>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                      
+                        <div class="swiper-slide">
+                            <div class = "slider-box" >
+                                <a href="#">
+                                <div class = "img-box">
+                                    <img src = "products/phone/oppo-reno6-5g-aurora-600x600.jpg" >
+                                </div></a>
+                                <div class = "info">
+                                    <a href="#">Oppo Reno6 5G</a>
+                                    <div class="product-price">
+                                        <p class="old-price">22.990.000&nbsp;₫ -10%</p>
+                                        <p class="new-price">20.490.000&nbsp;₫</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class = "slider-box" >
+                                <a href="#">
+                                <div class = "img-box">
+                                    <img src = "products/phone/samsung-galaxy-a52-8gb-256gb-thumb-violet-600x600-600x600.jpg" >
+                                </div></a>
+                                <div class = "info">
+                                    <a href="#">Samsung Galaxy A52</a>
+                                    <div class="product-price">
+                                        <p class="old-price">22.990.000&nbsp;₫ -10%</p>
+                                        <p class="new-price">20.490.000&nbsp;₫</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class = "slider-box" >
+                                <a href="#">
+                                <div class = "img-box">
+                                    <img src = "products/phone/vivo-y20s-xanh-1-600x600.jpg" >
+                                </div></a>
+                                <div class = "info">
+                                    <a href="#">Vivo Y20s</a>
+                                    <div class="product-price">
+                                        <p class="old-price">22.990.000&nbsp;₫ -10%</p>
+                                        <p class="new-price">20.490.000&nbsp;₫</p>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class = "slider-box" >
+                                <a href="#">
+                                <div class = "img-box">
+                                    <img src = "products/phone/realme-8-5g-blue-1-600x600.jpg" >
+                                </div></a>
+                                <div class = "info">
+                                    <a href="#">Realme 8 5G</a>
+                                    <div class="product-price">
+                                        <p class="old-price">22.990.000&nbsp;₫ -10%</p>
+                                        <p class="new-price">20.490.000&nbsp;₫</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class = "slider-box" >
+                                <a href="#">
+                                <div class = "img-box">
+                                    <img src = "products/phone/iphone-xi-do-600x600.jpg" >
+                                </div></a>
+                                <div class = "info">
+                                    <a href="#">iPhone 11</a>
+                                    <div class="product-price">
+                                        <p class="old-price">22.990.000&nbsp;₫ -10%</p>
+                                        <p class="new-price">20.490.000&nbsp;₫</p>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class = "slider-box" >
+                                <a href="#">
+                                <div class = "img-box">
+                                    <img width="50px" src = "products/laptop/apple-macbook-pro-2020-z11c-3-600x600.jpg" >
+                                </div></a>
+                                <div class = "info">
+                                    <a href="#">Macbook Pro 2020 z11c</a>
+                                    <div class="product-price">
+                                        <p class="old-price">22.990.000&nbsp;₫ -10%</p>
+                                        <p class="new-price">20.490.000&nbsp;₫</p>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class = "slider-box" >
+                                <a href="#">
+                                <div class = "img-box">
+                                    <img src = "products/laptop/acer-nitro-5-gaming-an515-57-50ft-i5-nhqd8sv003-600x600.jpg" >
+                                </div></a>
+                                <div class = "info">
+                                    <a href="#">Acer Nitro 5 Gaming an515 i5</a>
+                                    <div class="product-price">
+                                        <p class="old-price">22.990.000&nbsp;₫ -10%</p>
+                                        <p class="new-price">20.490.000&nbsp;₫</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class = "slider-box" >
+                                <a href="#">
+                                <div class = "img-box">
+                                    <img src = "products/sound/tai-nghe-bluetooth-true-wireless-lg-hbs-fn6-avatar-1-1-600x600.jpg" >
+                                </div></a>
+                                <div class = "info">
+                                    <a href="#">Tai Nghe Bluetooth True Wireless LG</a>
+                                    <div class="product-price">
+                                        <p class="old-price">22.990.000&nbsp;₫ -10%</p>
+                                        <p class="new-price">20.490.000&nbsp;₫</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class = "slider-box" >
+                                <a href="#">
+                                <div class = "img-box">
+                                    <img src = "products/accessories/sac-du-phong-10000mah-khong-day-xmobile-p106wd-avatar-1-600x600.jpg" >
+                                </div></a>
+                                <div class = "info">
+                                    <a href="#">Sạc dự phòng 10000mAh không dây Xmobile</a>
+                                    <div class="product-price">
+                                        <p class="old-price">22.990.000&nbsp;₫ -10%</p>
+                                        <p class="new-price">20.490.000&nbsp;₫</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class = "slider-box" >
+                                <a href="#">
+                                <div class = "img-box">
+                                    <img src = "products/watch/apple-watch-s6-40mm-vien-nhom-day-cao-su-01-600x600.jpg" >
+                                </div></a>
+                                <div class = "info">
+                                    <a href="#">Apple Watch S6 viền nhôm dây cao su hồng</a>
+                                    <div class="product-price">
+                                        <p class="old-price">22.990.000&nbsp;₫ -10%</p>
+                                        <p class="new-price">20.490.000&nbsp;₫</p>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class = "slider-box" >
+                                <a href="#">
+                                <div class = "img-box">
+                                    <img src = "products/phone/samsung-galaxy-note-20-062220-122200-fix-600x600.jpg" >
+                                </div></a>
+                                <div class = "info">
+                                    <a href="#">Samsung Galaxy Note 20</a>
+                                    <div class="product-price">
+                                        <p class="old-price">22.990.000&nbsp;₫ -10%</p>
+                                        <p class="new-price">20.490.000&nbsp;₫</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next" style="color:grey;"></div>
+                    <div class="swiper-button-prev" style="color:grey;"></div>
+                    
+                </div>
+                
+
+
+            </div>
+            <!------------------------------------------------------------------>
+            <!-------------------------------PHONE----------------------------------->
+
+            <div>
+                <div class="box-list">
+                    <div class="box-title">
+                        <p style="font-size: 25px; color: rgb(0, 0, 0); font-weight: bold; 
+                        margin: 0;padding: 10px;">ĐIỆN THOẠI NỔI BẬT</p>
+                        <div class="box-link">
+                            <a class="btn" href="#">Xem tất cả</a>
+                            <a class="btn" href="#">Vsmart</a>
+                            <a class="btn" href="#">Vivo</a>
+                            <a class="btn" href="#">Realme</a>
+                            <a class="btn" href="#">Nokia</a>
+                            <a class="btn" href="#">Xiaomi</a>
+                            <a class="btn" href="#">Oppo</a>
+                            <a class="btn" href="#">Samsung</a>
+                            <a class="btn" href="#">Apple</a>
+                        </div>
+                    </div>
+                    <div class="box-content">
+                        <div class="products">
+                            <div class = "product" >
+                                <a href="#">
+                                    <img src = "products/phone/iphone-12-pro-max-xanh-duong-new-600x600-600x600.jpg" >
+                                </a>
+                                <div class = "info">
+                                    <a href="#">iPhone 12 64GB</a>
+                                    <div class="product-price">
+                                        <p class="old-price">22.990.000&nbsp;₫ -10%</p>
+                                        
+                                        <p class="new-price">20.490.000&nbsp;₫</p>
+                                    </div>
+                                     
+                                </div>
+                            </div>
+                            <div class = "product" >
+                                <a href="#">
+                                    <img src = "products/phone/realme-c21y-black-600x600.jpg" >
+                                </a>
+                                <div class = "info">
+                                    <a href="#">Realme C21Y 4GB</a>
+                                    <div class="product-price">
+                                        <p class="old-price">3.990.000&nbsp;₫ -7%</p>
+                                        <p class="new-price">3.690.000&nbsp;₫</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class = "product" >
+                                <a href="#">
+                                    <img src = "products/phone/samsung-galaxy-z-fold-3-silver-600x600.jpg" >
+                                </a>
+                                <div class = "info">
+                                    <a href="#">Samsung Galaxy Z Fold3 5G 256GB</a>
+                                    <div class="product-price">
+                                        <p class="note">Hàng sắp về</p>
+                                        <p class="new-price">41.990.000&nbsp;₫</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class = "product" >
+                                <a href="#">
+                                    <img src = "products/phone/vivo-y53s-xanh-600x600.jpg" >
+                                </a>
+                                <div class = "info">
+                                    <a href="#">Vivo Y53s</a>
+                                    <div class="product-price">
+                                        <p class="old-price">6.990.000&nbsp;₫</p>
+                                        <p class="new-price">6.690.000&nbsp;₫</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class = "product" >
+                                <a href="#">
+                                    <img src = "products/phone/xiaomi-redmi-note-10-5g-xanh-bong-dem-1-600x600.jpg" >
+                                </a>
+                                <div class = "info">
+                                    <a href="#">Xiaomi Redmi Note 10 5G 8GB</a>
+                                    <div class="product-price">
+                                        <p class="old-price">5.990.000&nbsp;₫ -5%</p>
+                                        <p class="new-price">5.690.000&nbsp;₫</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>                        
+                            <div class = "product" >
+                                <a href="#">
+                                    <img src = "products/phone/vsmart-star-5-thumb-black-600x600.jpg" >
+                                </a>
+                                <div class = "info">
+                                    <a href="#">Vsmart Star 5 (4GB/64GB)</a>
+                                    <div class="product-price">
+                                        <p class="old-price">3.290.000&nbsp;₫ -15%</p>
+                                        <p class="new-price">2.790.000&nbsp;₫</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class = "product" >
+                                <a href="#">
+                                    <img src = "products/phone/oppo-reno6-5g-aurora-600x600.jpg" >
+                                </a>
+                                <div class = "info">
+                                    <a href="#">Oppo Reno6 Z 5G</a>
+                                    <div class="product-price">
+                                        
+                                        <p class="new-price">9.490.000&nbsp;₫</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class = "product" >
+                                <a href="#">
+                                    <img src = "products/phone/xiaomi-mi-11-lite-4g-blue-600x600.jpg" >
+                                </a>
+                                <div class = "info">
+                                    <a href="#">Xiaomi Mi 11 Lite</a>
+                                    <div class="product-price">
+                                        <p class="old-price">7.990.000&nbsp;₫ -11%</p>
+                                        <p class="new-price">7.090.000&nbsp;₫</p>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class = "product" >
+                                <a href="#">
+                                    <img src = "products/phone/samsung-galaxy-a52-8gb-256gb-thumb-violet-600x600-600x600.jpg" >
+                                </a>
+                                <div class = "info">
+                                    <a href="#">Samsung Galaxy A52 5G</a>
+                                    <div class="product-price">
+                                        <p class="old-price">10.990.000&nbsp;₫ -9%</p>
+                                        <p class="new-price">9.990.000&nbsp;₫</p>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class = "product" >
+                                <a href="#">
+                                    <img src = "products/phone/vivo-y12s-den-new-600x600-600x600.jpg" >
+                                </a>
+                                <div class = "info">
+                                    <a href="#">Vivo Y12s (4GB/128GB)</a>
+                                    <div class="product-price">
+                                        <p class="old-price">4.290.000&nbsp;₫ -11%</p>
+                                        <p class="new-price">3.790.000&nbsp;₫</p>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    
+                          
+                    </div>
+                </div>
+            </div>
+            <!--------------------------------------------------------------->
+            <!---------------------------LAPTOP------------------------------------>
+            <div>
+                <div class="box-list">
+                    <div class="box-title">
+                        <p style="font-size: 25px; color: rgb(0, 0, 0); font-weight: bold; 
+                        margin: 0;padding: 10px;">LAPTOP</p>
+                        <div class="box-link">
+                            <a class="btn" href="#">Xem tất cả</a>
+                            <a class="btn" href="#">MSI</a>
+                            <a class="btn" href="#">Dell</a>
+                            <a class="btn" href="#">Asus</a>
+                            <a class="btn" href="#">HP</a>
+                            <a class="btn" href="#">Microsoft Surface</a>
+                            <a class="btn" href="#">Mac</a>
+                        </div>
+                    </div>
+                    <div class="box-content">
+                        <div class="products">
+                            <div class = "product" >
+                                <a href="#">
+                                    <img src = "products/laptop/macbook-air-gold-select-201810_4.jpg" >
+                                </a>
+                                <div class = "info">
+                                    <a href="#">Apple Macbool Air M1 256GB 2020</a>
+                                    <div class="product-price">
+                                        <p class="old-price">27.990.000&nbsp;₫ -5%</p>
+                                        <p class="new-price">26.400.000&nbsp;₫</p>
+                                    </div>
+                                     
+                                </div>
+                            </div>
+                            <div class = "product" >
+                                <a href="#">
+                                    <img src = "products/laptop/mbp-silver-select-202011.jpg" >
+                                </a>
+                                <div class = "info">
+                                    <a href="#">Apple MacBook Pro 13 Touch Bar M1 256GB 2020</a>
+                                    <div class="product-price">
+                                        <p class="old-price">35.990.000&nbsp;₫ -10%</p>
+                                        <p class="new-price">32.290.000&nbsp;₫</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class = "product" >
+                                <a href="#">
+                                    <img src = "products/laptop/laptop-asus-vivobook-x415ma-pentium-n5030-9.jpg" >
+                                </a>
+                                <div class = "info">
+                                    <a href="#">Laptop Asus Vivobook R564JA-UH51T</a>
+                                    <div class="product-price">
+                                        <p class="old-price">16.990.000&nbsp;₫</p>
+                                        <p class="new-price">16.490.000&nbsp;₫</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class = "product" >
+                                <a href="#">
+                                    <img src = "products/laptop/laptop-dell-inspiron-15-3502-pent--ksp.jpg" >
+                                </a>
+                                <div class = "info">
+                                    <a href="#">Laptop Dell Inspiron 15 3502</a>
+                                    <div class="product-price">
+                                        <p class="old-price">10.990.000&nbsp;₫ -9%</p>
+                                        <p class="new-price">9.990.000&nbsp;₫</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class = "product" >
+                                <a href="#">
+                                    <img src = "products/laptop/acer-nitro-5-gaming-an515-57-50ft-i5-nhqd8sv003-600x600.jpg"
+                                </a>
+                                <div class = "info">
+                                    <a href="#">Acer Nitro 5 Gaming AN515 57 50FT i5 11400H...</a>
+                                    <div class="product-price">
+                                        <p class="old-price">27.490.000&nbsp;₫ </p>
+                                        <p class="new-price">26.490.000&nbsp;₫</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>                        
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!---------------------------------------------------------->
+            <!--------------------------TABLET-------------------------->
+            <div>
+                <div class="box-list">
+                    <div class="box-title">
+                        <p style="font-size: 25px; color: rgb(0, 0, 0); font-weight: bold; 
+                        margin: 0;padding: 10px;">TABLET</p>
+                        <div class="box-link">
+                            <a class="btn" href="#">Xem tất cả</a>
+                            <a class="btn" href="#">Lenovo</a>
+                            <a class="btn" href="#">Samsung</a>
+                            <a class="btn" href="#">iPad</a>
+                        </div>
+                    </div>
+                    <div class="box-content">
+                        <div class="products">
+                            <div class = "product" >
+                                <a href="#">
+                                    <img src = "products/tablet/ipad-2020-gray_1.jpg" >
+                                </a>
+                                <div class = "info">
+                                    <a href="#">iPad 10.2 2020 Wifi 32GB </a>
+                                    <div class="product-price">
+                                        <p class="old-price">9.990.000&nbsp;₫ -3%</p>
+                                        <p class="new-price">9.600.000&nbsp;₫</p>
+                                    </div>
+                                     
+                                </div>
+                            </div>
+                            <div class = "product" >
+                                <a href="#">
+                                    <img src = "products/tablet/ipad-air-2020-gray.jpg" >
+                                </a>
+                                <div class = "info">
+                                    <a href="#">iPad Air 10.9 2020 WiFi 64GB</a>
+                                    <div class="product-price">
+                                        <p class="old-price">16.990.000&nbsp;₫ -12%</p>
+                                        <p class="new-price">14.900.000&nbsp;₫</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class = "product" >
+                                <a href="#">
+                                    <img src = "products/tablet/samsung-galaxy-tab-s7-1.jpg" >
+                                </a>
+                                <div class = "info">
+                                    <a href="#">Samsung Galaxy Tab S7</a>
+                                    <div class="product-price">
+                                        <p class="old-price">18.990.999&nbsp;₫ -17%</p>
+                                        <p class="new-price">15.700.000&nbsp;₫</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class = "product" >
+                                <a href="#">
+                                    <img src = "products/tablet/ipad-pro-11-2021-2_1.jpg" >
+                                </a>
+                                <div class = "info">
+                                    <a href="#">Apple iPad Pro 11 2021 M1 WiFi 128GB</a>
+                                    <div class="product-price">
+                                        <p class="old-price">21.990.000&nbsp;₫</p>
+                                        <p class="new-price">21.900.000&nbsp;₫</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class = "product" >
+                                <a href="#">
+                                    <img src = "products/tablet/samsung-galaxy-tab-s7-fe-chinh-hang_1.jpg" >
+                                </a>
+                                <div class = "info">
+                                    <a href="#">Samsung Galaxy Tab S7 FE </a>
+                                    <div class="product-price">
+                                        <p class="old-price">13.990.000&nbsp;₫ -7%</p>
+                                        <p class="new-price">12.900.000&nbsp;₫</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>                        
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!----------------------------------------------------------->
+            <!--------------------------SOUND---------------------------->
+            <div>
+                <div class="box-list">
+                    <div class="box-title">
+                        <p style="font-size: 25px; color: rgb(0, 0, 0); font-weight: bold; 
+                        margin: 0;padding: 10px;">ÂM THANH</p>
+                        <div class="box-link">
+                            <a class="btn" href="#">Xem tất cả</a>
+                            <a class="btn" href="#">Tai nghe chụp tai</a>
+                            <a class="btn" href="#">Tai Nghe</a>
+                            <a class="btn" href="#">Tai nghe không dây</a>
+                            <a class="btn" href="#">Loa Bluetooth</a>
+                        </div>
+                    </div>
+                    <div class="box-content">
+                        <div class="products">
+                            <div class = "product" >
+                                <a href="#">
+                                    <img src = "products/sound/buds-live_1.jpg" >
+                                </a>
+                                <div class = "info">
+                                    <a href="#">Tai nghe bluetooth Galaxy Buds Live</a>
+                                    <div class="product-price">
+                                        <p class="old-price">4.490.000&nbsp;₫ -55%</p>
+                                        <p class="new-price">1.490.000&nbsp;₫</p>
+                                    </div>
+                                     
+                                </div>
+                            </div>
+                            <div class = "product" >
+                                <a href="#">
+                                    <img src = "products/sound/airpods-2_6.jpg" >
+                                </a>
+                                <div class = "info">
+                                    <a href="#">Tai nghe Bluetooth Apple Airpods 2 VN/A</a>
+                                    <div class="product-price">
+                                        <p class="old-price">3.990.000&nbsp;₫ -13%</p>
+                                        <p class="new-price">3.450.000&nbsp;₫</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class = "product" >
+                                <a href="#">
+                                    <img src = "products/sound/airpods-pro_5.jpg" >
+                                </a>
+                                <div class = "info">
+                                    <a href="#">Tai nghe Bluetooth Apple Airpods Pro VN/A</a>
+                                    <div class="product-price">
+                                        <p class="old-price">7.990.999&nbsp;₫ -35%</p>
+                                        <p class="new-price">5.190.999&nbsp;₫</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class = "product" >
+                                <a href="#">
+                                    <img src = "products/sound/jbl-charge-4.jpg" >
+                                </a>
+                                <div class = "info">
+                                    <a href="#">Loa Bluetooth JBL Charge 4 </a>
+                                    <div class="product-price">
+                                        <p class="old-price">3.990.000&nbsp;₫ -37%</p>
+                                        <p class="new-price">2.490.000&nbsp;₫</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class = "product" >
+                                <a href="#">
+                                    <img src = "products/sound/wf1000xm3_1.jpg" >
+                                </a>
+                                <div class = "info">
+                                    <a href="#">Tai nghe không dây chống ồn Sony WF-1000XM3 </a>
+                                    <div class="product-price">
+                                        <p class="old-price">5.490.000&nbsp;₫ -40%</p>
+                                        <p class="new-price">3.290.000&nbsp;₫</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>                        
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            
+            
+        </div>
+        <!----------------------------------------------------------->
+        <!-------------------------FOOTER---------------------------->
+        <footer>
+            <div class="contact-box">
+                <div class="container">
+                    <div class="footer-col">
+                        <ul class="list-cont">
+                            <li>
+                                <p class="list-foot"><a href="#" >Lịch sử mua hàng</a></p>
+                                <p class="list-foot"><a href="#" >Cộng tác bán hàng</a></p>
+                                <p class="list-foot"><a href="#" >Tìm hiểu mua trả góp</a></p>
+                                <p class="list-foot"><a href="#" >Chính sách bảo hành</a></p>
+                            </li>
+                        </ul>
+                        <ul class="list-cont">
+                            <li>
+                                <p class="list-foot"><a href="#" >Giới thiệu công ty</a></p>
+                                <p class="list-foot"><a href="#" >Tuyển dụng</a></p>
+                                <p class="list-foot"><a href="#" >Tìm cửa hàng</a></p>
+                                <p class="list-foot"><a href="#" >Gửi góp ý, khiếu nại</a></p>
+                            </li>
+                        </ul>
+                        <ul class="list-cont">
+                            <li>
+                                <p class="list-foot">Liên hệ:</p>
+                                <p class="tel"> 079.7523.180</p>
+                            </li>
+                        </ul>
+                        <ul class="list-cont">
+                            <li>
+                                <p class="payment-title"><strong>Thanh toán miễn phí</strong> </p>
+                                <li class="payment-logo">
+                                    <img src="payment/logo-visa.png"/>
+                                    <img src="payment/logo-master.png"/>
+                                    <img src="payment/logo-samsungpay.png"/>
+                                </li>
+                                <li class="payment-logo">
+                                    <img src="payment/logo-vnpay.png"/>
+                                    <img src="payment/logo-atm.png"/>
+                                    <img src="payment/logo-jcb.png"/>
+                                </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+   
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+            <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 5,
+            spaceBetween: 0,
+            slidesPerGroup: 4,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            });
+        </script>
+    </body>

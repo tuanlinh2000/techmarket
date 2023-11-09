@@ -1,0 +1,21 @@
+.container{
+    max-width: 1230px !important;
+}
+.box-container{
+    display: flex;
+    /*border: 1px solid teal;*/
+    margin-bottom: 10px;
+}
+.box-right-ads{
+    padding: 2px;
+    float: right;
+}
+.box-right-ad{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.box-right-ad a img{
+    width: 362px;
+    height: 145px;
+    border-radius: 2px;
+}
